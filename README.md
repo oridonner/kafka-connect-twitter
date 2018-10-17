@@ -38,24 +38,3 @@ Test _Kafka Consumer_ topic output:
 Data sample:
 > {"schema":{"type":"struct","fields":[{"type":"int64","optional":false,"field":"id"},{"type":"string","optional":true,"field":"created_at"}
 
-{
-    "type":"struct",
-    "fields":  [
-                                {"type":"int64","optional":false,"field":"id"},
-                                {"type":"string","optional":true,"field":"name"},
-                                {"type":"string","optional":true,"field":"screen_name"},
-                                {"type":"string","optional":true,"field":"location"},
-                                {"type":"boolean","optional":false,"field":"verified"},
-                                {"type":"int32","optional":false,"field":"friends_count"},
-                                {"type":"int32","optional":false,"field":"followers_count"},
-                                {"type":"int32","optional":false,"field":"statuses_count"}
-                ],
-    "optional":false,
-    "name":"com.eneco.trading.kafka.connect.twitter.User",
-    "field":"user"},
-
-{"type":"string","optional":true,"field":"text"},{"type":"string","optional":true,"field":"lang"},{"type":"boolean","optional":false,"field":"is_retweet"}
-
-
-
-
