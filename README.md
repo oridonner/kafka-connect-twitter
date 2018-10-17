@@ -14,15 +14,19 @@ Start a single _kafka_ broker on localhost:9092 :<br />
 `./bin/kafka-server-start.sh config/server.properties`
 
 
-## Start _Kafka Connect_
+## Start _Kafka Connect_ in distributed mode
 Start _Kafka Connect_ on distributed mode at localhost:8083 :<br />
 `./bin/connect-distributed.sh config/connect-distributed.properties`
 
-## Create _Twitter_ Connector
+#### Create _Twitter_ Connector
 
 `echo '{"name": "source-twitter-distributed-1", "config":{"connector.class":"com.eneco.trading.kafka.connect.twitter.TwitterSourceConnector","tasks.max":"1","topic":"twitter-data","key.converter":"org.apache.kafka.connect.json.JsonConverter","key.converter.schemas.enable":"true","value.converter":"org.apache.kafka.connect.json.JsonConverter","value.converter.schemas.enable":"true","twitter.consumerkey":"WyBAPqB21h196UyENZATSnL3F","twitter.consumersecret":"jQtSGi0tynigU51EkSfCNahqrBkHE18cH0xU2FttVzTKpNbcJO","twitter.token":"908270057641463809-iju88vZOOTl2hiROMRA1XGLG1CnQPKI","twitter.secret":"r4L9oXix5wqoAD5GNIMtjRJOHuVO65mWLynhmmnD7sOW1","track.terms":"programming,java,kafka,scala","language":"en"}}' | curl -X POST -d @- http://localhost:8083/connectors --header "Content-Type:application/json"`<br/>
 
 Get/create _Twitter_ Access Token [here](https: //apps.twitter.com/).<br/>
+
+## Start _Kafka Connect_ in standalone mode
+You can also start the connector in standalone mode, based on **twitter-source-connector.properties** connector config file:
+`./bin/connect-standalone.sh config/connect-standalone.properties config/twitter-source-connector.properties`
 
 ## Test
 Test if topic **twitter-data** was created:<br />
@@ -33,3 +37,25 @@ Test _Kafka Consumer_ topic output:
 
 Data sample:
 > {"schema":{"type":"struct","fields":[{"type":"int64","optional":false,"field":"id"},{"type":"string","optional":true,"field":"created_at"}
+
+{
+    "type":"struct",
+    "fields":  [
+                                {"type":"int64","optional":false,"field":"id"},
+                                {"type":"string","optional":true,"field":"name"},
+                                {"type":"string","optional":true,"field":"screen_name"},
+                                {"type":"string","optional":true,"field":"location"},
+                                {"type":"boolean","optional":false,"field":"verified"},
+                                {"type":"int32","optional":false,"field":"friends_count"},
+                                {"type":"int32","optional":false,"field":"followers_count"},
+                                {"type":"int32","optional":false,"field":"statuses_count"}
+                ],
+    "optional":false,
+    "name":"com.eneco.trading.kafka.connect.twitter.User",
+    "field":"user"},
+
+{"type":"string","optional":true,"field":"text"},{"type":"string","optional":true,"field":"lang"},{"type":"boolean","optional":false,"field":"is_retweet"}
+
+
+
+
