@@ -25,7 +25,7 @@ Start _Kafka Connect_ on distributed mode at localhost:8083 :<br />
 Get/create _Twitter_ Access Token [here](https: //apps.twitter.com/).<br/>
 
 ## Start _Kafka Connect_ in standalone mode
-You can also start the connector in standalone mode, based on **twitter-source-connector.properties** connector config file:
+You can also start the connector in standalone mode, based on [twitter-source-connector.properties](http://192.168.0.5/DataOps/twitter-source-connector/blob/master/config/twitter-source-connector.properties) connector config file:<br >
 `./bin/connect-standalone.sh config/connect-standalone.properties config/twitter-source-connector.properties`
 
 ## Test
