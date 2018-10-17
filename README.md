@@ -36,7 +36,7 @@ Test _Kafka Consumer_ topic output:
 `./bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic twitter-data --from-beginning`
 
 Data sample:
-```json
+```jsonnaspython
 {"schema":{"type":"struct","fields":[{"type":"int64","optional":false,"field":"id"},{"type":"string","optional":true,"field":"created_at"}
 ```
 
