@@ -1,6 +1,6 @@
 ## Build _Twitter_ Connector
 Build Twitter Connector instructions from this [blog](https://www.confluent.io/blog/using-ksql-to-analyse-query-and-transform-data-in-kafka)<br \>
-Don't use this _Twitter_ connector build instructions [here](https://github.com/Eneco/kafka-connect-twitter#starting-kafka-connect-twitter), it works only with **_kafka_ 0.10** !!!<br />
+Don't use [this](https://github.com/Eneco/kafka-connect-twitter#starting-kafka-connect-twitter) _Twitter_ connector, it works only with **_kafka_ 0.10** !!!<br />
 
 untar and copy  .jars to **libs/**.
 
