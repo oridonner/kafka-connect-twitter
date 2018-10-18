@@ -1,9 +1,8 @@
 ## Build _Twitter_ Connector
+Build Twitter Connector instructions from this [blog](https://www.confluent.io/blog/using-ksql-to-analyse-query-and-transform-data-in-kafka)<br \>
+Don't use this _Twitter_ connector build instructions [here](https://github.com/Eneco/kafka-connect-twitter#starting-kafka-connect-twitter), it works only with **_kafka_ 0.10** !!!<br />
 
-_Twitter_ connector build instructions [here](https://github.com/Eneco/kafka-connect-twitter#starting-kafka-connect-twitter).<br/>
-This Connector works with **_kafka_ 0.10** only, wasn't tested on **_kafka_ 2.0**<br />
-
-Copy _jar_ to **libs/**.
+untar and copy  .jars to **libs/**.
 
 ## Start _Zookeeper_ 
 Start _Zookeeper_ on localhost:2181 :<br />
@@ -13,9 +12,6 @@ Start _Zookeeper_ on localhost:2181 :<br />
 Start a single _kafka_ broker on localhost:9092 :<br />
 `./bin/kafka-server-start.sh config/server.properties`
 
-
-#### Create _Twitter_ Connector
-Build Twitter Connector instructions from this [blog](https://www.confluent.io/blog/using-ksql-to-analyse-query-and-transform-data-in-kafka)<br \>
 
 #### Twitter Access Tokens
 
