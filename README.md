@@ -9,7 +9,7 @@ Get inside the new folder and build package with _Maven_ :<br />
 `cd kafka-connect-twitter`<br />
 `mvn clean package`<br />
 
-Untar package and copy jars to libs/ folder:
+Untar package and copy jars to libs/ folder:<br/>
 `cd target`<br />
 `tar -xvf kafka-connect-twitter-0.2-SNAPSHOT.tar.gz`<br\>
 
