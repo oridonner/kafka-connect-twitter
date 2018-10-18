@@ -19,14 +19,14 @@ Copy .jar files from **/usr/share/kafka-connect/kafka-connect-twitter/** to **li
 connect-utils-0.3.140.jar <br />
 freemarker-2.3.25-incubating.jar <br />
 guava-18.0.jar <br />
-jackson-annotations-2.8.0.jar
-jackson-core-2.8.5.jar
-jackson-databind-2.8.5.jar
-javassist-3.19.0-GA.jar
-kafka-connect-twitter-0.2-SNAPSHOT.jar
-reflections-0.9.10.jar
-twitter4j-core-4.0.6.jar
-twitter4j-stream-4.0.6.jar
+jackson-annotations-2.8.0.jar <br />
+jackson-core-2.8.5.jar <br />
+jackson-databind-2.8.5.jar <br />
+javassist-3.19.0-GA.jar <br />
+kafka-connect-twitter-0.2-SNAPSHOT.jar <br />
+reflections-0.9.10.jar <br />
+twitter4j-core-4.0.6.jar <br />
+twitter4j-stream-4.0.6.jar <br />
 
 # Test _Twitter_ Connector
 We will test _Twitter_ Connector with _Kafka Connect_ in a standalone mode. First we will start a _Zookeeper_ server and a single _Kafka_ broker.<br/> 
