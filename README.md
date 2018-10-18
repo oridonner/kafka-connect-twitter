@@ -14,7 +14,7 @@ Untar package and copy jars to libs/ folder:<br/>
 `tar -xvf kafka-connect-twitter-0.2-SNAPSHOT.tar.gz`<br\>
 
 # Test _Twitter_ Connector
-We will test _Twitter_ Connector with _Kafka Connect_ in standalone mode. First we will start a _Zookeeper_ server and a single _Kafka_ broker.<br/> 
+We will test _Twitter_ Connector with _Kafka Connect_ in a standalone mode. First we will start a _Zookeeper_ server and a single _Kafka_ broker.<br/> 
 
 ## Start _Zookeeper_ 
 Start _Zookeeper_ on localhost:2181 :<br />
