@@ -9,9 +9,24 @@ Get inside the new folder and build package with _Maven_ :<br />
 `cd kafka-connect-twitter`<br />
 `mvn clean package`<br />
 
-Untar package and copy jars to libs/ folder:<br/>
+Untar package:<br/>
 `cd target`<br />
 `tar -xvf kafka-connect-twitter-0.2-SNAPSHOT.tar.gz`<br\>
+
+Copy .jar files from **/usr/share/kafka-connect/kafka-connect-twitter/** to **libs/** folder:<br />
+
+> annotations-2.0.1.jar
+connect-utils-0.3.140.jar
+freemarker-2.3.25-incubating.jar
+guava-18.0.jar
+jackson-annotations-2.8.0.jar
+jackson-core-2.8.5.jar
+jackson-databind-2.8.5.jar
+javassist-3.19.0-GA.jar
+kafka-connect-twitter-0.2-SNAPSHOT.jar
+reflections-0.9.10.jar
+twitter4j-core-4.0.6.jar
+twitter4j-stream-4.0.6.jar
 
 # Test _Twitter_ Connector
 We will test _Twitter_ Connector with _Kafka Connect_ in a standalone mode. First we will start a _Zookeeper_ server and a single _Kafka_ broker.<br/> 
