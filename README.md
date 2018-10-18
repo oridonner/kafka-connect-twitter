@@ -15,10 +15,10 @@ Untar package:<br/>
 
 Copy .jar files from **/usr/share/kafka-connect/kafka-connect-twitter/** to **libs/** folder:<br />
 
-> annotations-2.0.1.jar
-connect-utils-0.3.140.jar
-freemarker-2.3.25-incubating.jar
-guava-18.0.jar
+> annotations-2.0.1.jar <br />
+connect-utils-0.3.140.jar <br />
+freemarker-2.3.25-incubating.jar <br />
+guava-18.0.jar <br />
 jackson-annotations-2.8.0.jar
 jackson-core-2.8.5.jar
 jackson-databind-2.8.5.jar
