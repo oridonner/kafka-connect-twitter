@@ -27,8 +27,7 @@ Start a single _kafka_ broker on localhost:9092 :<br />
 
 #### Twitter Access Tokens
 
-Get/create _Twitter_ Access Token [here](https://apps.twitter.com/app/14818905/keys).<br/>
-Twitter App name: Ori-Kafka-Connect-Demo<br />
+Get/create _Twitter_ Access Token [here](https://apps.twitter.com/app/14818905/keys). Twitter App name: Ori-Kafka-Connect-Demo<br />
 
 ## Start _Kafka Connect_ in standalone mode
 You can also start the connector in standalone mode, based on [twitter-source-connector.properties](http://192.168.0.5/DataOps/twitter-source-connector/blob/master/config/twitter-source-connector.properties) connector config file:<br >
