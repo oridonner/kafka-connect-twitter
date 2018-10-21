@@ -5,6 +5,12 @@ Use [jcustenborder connector](https://github.com/jcustenborder/kafka-connect-twi
 Clone source code from _Git_:<br /> 
 `git clone https://github.com/jcustenborder/kafka-connect-twitter.git`
 
+Pay attention to [this](https://github.com/jcustenborder/kafka-connect-twitter/issues/16) bug-fix:<br />
+Change:<br />
+`<twitter4j.version>[4.0,)</twitter4j.version>`
+To:<br />
+`<twitter4j.version>4.0.6</twitter4j.version>`
+
 Get inside the new folder and build package with _Maven_ :<br />
 `cd kafka-connect-twitter`<br />
 `mvn clean package`<br />
